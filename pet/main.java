@@ -2,6 +2,7 @@ package pet;
 
 import java.util.Scanner;
 
+// 在 idea 里断点调试，一步一步走
 public class main {
     public static void main(String[] args) {
         manage st =new manage(100);

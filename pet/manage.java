@@ -105,9 +105,16 @@ public class manage {
         }
         System.out.println("=====宠物狗清单=====");
         for (int i = 0; i < dogs.length; i++) {
-            if (cats[i] != null) {
-                System.out.println(dogs[i].getColor() + "\t" + dogs[i].getAge() + "\t" + dogs[i].getSex() +
-                        "\t" + dogs[i].getInPrice() + "\t" + dogs[i].getOutPrice());
+            // 应该是 dogs[i]
+            // if (cats[i] != null) {
+            //     System.out.println(dogs[i].getColor() + "\t" + dogs[i].getAge() + "\t" + dogs[i].getSex() +
+            //             "\t" + dogs[i].getInPrice() + "\t" + dogs[i].getOutPrice());
+            // }
+            // 不要有重复的代码 dogs[i]，另外创建一个变量
+            dog dog = dogs[i];
+            if (dog != null) {
+                System.out.println(dog.getColor() + "\t" + dog.getAge() + "\t" + dog.getSex() +
+                        "\t" + dog.getInPrice() + "\t" + dog.getOutPrice());
             }
         }
     } public void sell() {

@@ -1,6 +1,8 @@
 package pet;
 
 public class pets {
+    // 私有字段，外界不能直接修改，得调用 setXX()；Java 语言常用的 getXX(), setXX()，很啰嗦，你慢慢会体会到
+    // 软件工程里的原则：“高内聚低耦合”，https://juejin.cn/post/6844903636397457415
     private String color;  //颜色
     private int age;  //年龄
     private String sex; //性别
